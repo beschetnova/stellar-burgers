@@ -206,12 +206,19 @@ export const resetPasswordApi = (data: { password: string; token: string }) =>
 
 type TUserResponse = TServerResponse<{ user: TUser }>;
 
-export const getUserApi = () =>
-  fetchWithRefresh<TUserResponse>(`${URL}/auth/user`, {
+export const getUserApi = async () => {
+  const token = getCookie('accessToken');
+
+  if (!token) {
+    throw new Error('Необходим токен для доступа');
+  }
+
+  return await fetchWithRefresh<TUserResponse>(`${URL}/auth/user`, {
     headers: {
-      authorization: getCookie('accessToken')
+      authorization: token
     } as HeadersInit
   });
+};
 
 export const updateUserApi = (user: Partial<TRegisterData>) =>
   fetchWithRefresh<TUserResponse>(`${URL}/auth/user`, {
