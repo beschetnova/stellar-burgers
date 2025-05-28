@@ -10,7 +10,7 @@ import {
   registerUserApi
 } from '@api';
 import { TOrder, TUser } from '@utils-types';
-import { deleteCookie, setCookie } from '../../utils/cookie';
+import { deleteCookie, setCookie } from '../../../utils/cookie';
 
 type TUserState = {
   request: boolean;

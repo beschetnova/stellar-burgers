@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from '../../services/store';
 import { TConstructorIngredient } from '@utils-types';
 import { BurgerConstructorUI } from '@ui';
-import { getUserState } from '../../services/slices/userSlice';
+import { getUserState } from '../../services/slices/userSlice/userSlice';
 import {
   getBurgerConstructorState,
   createOrder,
   clearOrder,
   setRequest
-} from '../../services/slices/burgerConstructorSlice';
+} from '../../services/slices/burgerConstructorSlice/burgerConstructorSlice';
 
 export const BurgerConstructor: FC = () => {
   const navigate = useNavigate();

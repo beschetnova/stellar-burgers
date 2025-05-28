@@ -16,8 +16,8 @@ import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { useDispatch } from '../../services/store';
 import { ProtectedRoute } from '../protected-route/protected-route';
-import { getUser } from '../../services/slices/userSlice';
-import { getIngredient } from '../../services/slices/ingredientSlice';
+import { getUser } from '../../services/slices/userSlice/userSlice';
+import { getIngredient } from '../../services/slices/ingredientSlice/ingredientSlice';
 
 const App = () => {
   const location = useLocation();
