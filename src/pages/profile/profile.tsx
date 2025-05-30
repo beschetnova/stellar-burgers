@@ -6,7 +6,7 @@ import {
   getUser,
   getUserState,
   updateUser
-} from '../../services/slices/userSlice';
+} from '../../services/slices/userSlice/userSlice';
 
 export const Profile: FC = () => {
   const loading = useSelector(getUserState).request;

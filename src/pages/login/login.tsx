@@ -6,7 +6,7 @@ import {
   loginUser,
   getUserState,
   getError
-} from '../../services/slices/userSlice';
+} from '../../services/slices/userSlice/userSlice';
 
 export const Login: FC = () => {
   const dispatch = useDispatch();
