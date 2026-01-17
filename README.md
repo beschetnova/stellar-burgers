@@ -1,5 +1,9 @@
 # Проектная работа 11-го спринта
 
+
+https://github.com/user-attachments/assets/963e954f-e8d6-4a73-a41f-dc933b2ba968
+
+
 [Макет](<https://www.figma.com/file/vIywAvqfkOIRWGOkfOnReY/React-Fullstack_-Проектные-задачи-(3-месяца)_external_link?type=design&node-id=0-1&mode=design>)
 
 [Чеклист](https://www.notion.so/praktikum/0527c10b723d4873aa75686bad54b32e?pvs=4)
